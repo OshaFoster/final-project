@@ -17,9 +17,9 @@ export function loadRecipes(){
     }
 }
 
-export function addRecipe(){
+export function addRecipe(recipe){
     return(dispatch)=>{
-        axios.post(recipesUrl).then((response)=>{
+        axios.post(recipesUrl, recipe).then((response)=>{
             dispatch({
                 type: "ADD_RECIPE",
                 recipes: response.data

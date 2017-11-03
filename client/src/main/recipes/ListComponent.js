@@ -4,7 +4,10 @@ import {recipes} from "../../redux/actions"
 
 function ListComponent(props){
     return(
-        <div>{props.recipe.title}</div>
+        <div>
+            <h5>{props.recipe.title}{props.recipe.description}</h5>
+
+            </div>
     )
 }
 
