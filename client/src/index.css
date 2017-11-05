@@ -1,0 +1,111 @@
+
+
+.recipeDiv {
+     text-align: left;
+     width: 55%;
+     /*margin-left: 250px;*/
+     margin: auto;
+     margin-top: 50px;
+     color:#122D35;
+     border-bottom: 1px solid lightgray;
+     background-color:rgba(250, 250, 250, 0.5) ;
+
+}
+.appDiv{
+    height: 100vh;
+    overflow: scroll;
+}
+
+.recipeDiv h2 {
+    font-size: 36px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    margin:10px;
+    font-style: bold;
+    color: #122D35;
+
+
+}
+.header {
+    height:400px;
+}
+body {
+    height: 100vh;
+    /*overflow: scroll;*/
+    background: url(https://images.unsplash.com/photo-1452251889946-8ff5ea7b27ab?auto=format&fit=crop&w=2524&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D) no-repeat;
+    background-size: cover;
+}
+.addDiv{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin:auto;
+}
+
+
+.addInput{
+    font-size: 18px;
+    background-color: rgba(250, 250, 250, 0.5);
+    font-size: 24px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    margin:10px;
+    font-style: bold;
+    color: #122D35;
+
+}
+.nav a {
+    float:right;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    padding:20px 20px;
+    font-family: Font;
+    font-weight: 800;
+    margin-right: 35px;
+}
+
+.title {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.title h1 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 90px;
+    font-style: bold;
+    font-family: 'Open Sans', sans-serif;
+
+}
+span {
+    font-size: 24px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    margin:10px;
+    font-style: bold;
+    color: #122D35;
+
+}
+.addButton{
+    width: 58%;
+    margin: auto;
+    background: whitesmoke;
+
+}
+.title h4 {
+    font-size: 30px;
+    margin: 10px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.notesDiv{
+    margin-top:10px;
+    border-top: 1px solid #122D35;
+
+}
+.deleteButton{
+    background-color:#122D35;
+    opacity: 0.5;
+    color:white;
+    float:right;
+}

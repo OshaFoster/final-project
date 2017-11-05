@@ -18,6 +18,7 @@ class RecipeList extends React.Component{
     }
 
     genList(){
+        console.log(recipes)
         return this.props.recipes.map((recipe, index)=>{
             return <ListComponent key={recipe.title + index}
                                     recipe={recipe}

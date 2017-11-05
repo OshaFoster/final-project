@@ -20,6 +20,7 @@ export function loadRecipes(){
 export function addRecipe(recipe){
     return(dispatch)=>{
         axios.post(recipesUrl, recipe).then((response)=>{
+            console.log(response.data);
             dispatch({
                 type: "ADD_RECIPE",
                 recipes: response.data

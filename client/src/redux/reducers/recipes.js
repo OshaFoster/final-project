@@ -4,10 +4,11 @@ const recipes = function(prevRecipes =[], action){
     switch(action.type){
 
         case "ADD_RECIPE":
-        return newRecipes.push(action.recipes)
+        newRecipes.push(action.recipes)
+        return newRecipes.reverse();
 
         case "LOAD_RECIPES":
-        return action.recipes;
+        return action.recipes.reverse();
 
         case "DELETE_RECIPE":
         return newRecipes.filter((recipe)=>{
