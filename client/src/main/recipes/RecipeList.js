@@ -2,6 +2,7 @@ import React from "react";
 import ListComponent from "./ListComponent"
 import {connect} from "react-redux"
 import {recipes} from "../../redux/actions"
+import AddContainer from  "../addForm/Container"
 
 class RecipeList extends React.Component{
     constructor(){
@@ -29,6 +30,7 @@ class RecipeList extends React.Component{
     render(){
         return(
             <div>
+            <AddContainer/>
                 <h5>{this.genList()}</h5>
             </div>
         )
@@ -37,6 +39,7 @@ class RecipeList extends React.Component{
 
 const mapStateToProps =(state)=>{
     return{
+
         recipes:state.recipes
     }
 }
