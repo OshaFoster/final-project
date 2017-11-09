@@ -2,7 +2,7 @@ import React from "react";
 import ListComponent from "./ListComponent"
 import {connect} from "react-redux"
 import {recipes} from "../../redux/actions"
-import AddContainer from  "../addForm/Container"
+
 
 class RecipeList extends React.Component{
     constructor(){
@@ -22,7 +22,7 @@ class RecipeList extends React.Component{
         function searchRecipes(query, recipes){
             function checkWord(word){
 
-                return word.includes(query);
+            return word.includes(query);
             }
             function checkRecipe(recipe){
                 for(let key in recipe){

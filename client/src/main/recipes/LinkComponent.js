@@ -1,19 +1,13 @@
 import React from "react";
 import SearchComponent from "../search/Component"
 
-
-class LinkComponent extends React.Component{
-    constructor(){
-        super();
-    }
-
-    render(){
+function SearchLink(){
         return(
             <div>
                 <SearchComponent/>
             </div>
         )
     }
-}
 
-export default LinkComponent
+
+export default SearchLink;

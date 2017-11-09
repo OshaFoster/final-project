@@ -1,15 +1,12 @@
 import React from "react";
-import SearchComponent from "./search/Component"
+import {Link} from "react-router-dom"
 
 function Header() {
     return (
         <div className="header">
             <div className="nav">
-            <SearchComponent/>
-                <a href="">Contact</a>
-                <a href="">Recipe</a>
-                <a href="">About</a>
-                <a href="">Home</a>
+            <Link to="/search">Recipe Search</Link>
+            <Link to="/">Home</Link>
             </div>
             <div className="title">
                 <h1 >Good Food!</h1>
