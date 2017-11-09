@@ -5,15 +5,14 @@ const recipeSchema = new Schema({
 
     title:{
         type:String,
-        required:true
+        required: true
     },
     description:{
-        type:String,
-        required:true
+        type:String
     },
     url:{
         type:String,
-        required:true
+        required: true
     },
 
     notes:{

@@ -61,3 +61,11 @@ export function editRecipe(id, editedRecipe){
     })
     }
 }
+
+export function searchRecipe(query){
+    console.log(typeof query)
+    return {
+        type:"SEARCH_RECIPE",
+        query
+    }
+}

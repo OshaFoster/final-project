@@ -1,5 +1,5 @@
 import React from "react";
-//import Frame from "react-iframe-component";
+import SearchComponent from "../search/Component"
 
 
 class LinkComponent extends React.Component{
@@ -8,11 +8,12 @@ class LinkComponent extends React.Component{
     }
 
     render(){
-    return(
-
-        <iframe src="https://www.google.com"></iframe>
-    )
-}
+        return(
+            <div>
+                <SearchComponent/>
+            </div>
+        )
+    }
 }
 
 export default LinkComponent

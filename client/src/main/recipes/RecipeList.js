@@ -19,8 +19,25 @@ class RecipeList extends React.Component{
     }
 
     genList(){
-        console.log(recipes)
-        return this.props.recipes.map((recipe, index)=>{
+        function searchRecipes(query, recipes){
+            function checkWord(word){
+
+                return word.includes(query);
+            }
+            function checkRecipe(recipe){
+                for(let key in recipe){
+                    if(recipe.hasOwnProperty(key) && typeof recipe[key] === "string"){
+                    if(checkWord(recipe[key].toLowerCase())){
+                        return true;
+                        }
+                    }
+                }
+                return false;
+            }
+            return recipes.filter(checkRecipe)
+        }
+
+        return searchRecipes(this.props.filter, this.props.recipes).map((recipe, index)=>{
             return <ListComponent key={recipe.title + index}
                                     recipe={recipe}
                                     index={index}
@@ -29,9 +46,8 @@ class RecipeList extends React.Component{
     }
     render(){
         return(
-            <div>
-            <AddContainer/>
-                <h5>{this.genList()}</h5>
+            <div className="parent">
+            {this.genList()}
             </div>
         )
     }
@@ -40,7 +56,8 @@ class RecipeList extends React.Component{
 const mapStateToProps =(state)=>{
     return{
 
-        recipes:state.recipes
+        recipes:state.recipes,
+        filter:state.filter
     }
 }
 

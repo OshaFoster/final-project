@@ -6,8 +6,10 @@ import {recipes} from "../../../redux/actions"
 class EditContainer extends React.Component{
     constructor(props){
         super(props);
-        this.state= {
-            
+        this.state = {
+
+            toggleShow: false,
+
             inputs:{
                 title:props.recipe.title,
                 description:props.recipe.description,
@@ -17,6 +19,7 @@ class EditContainer extends React.Component{
         }
         this.handleChange=this.handleChange.bind(this);
         this.handleSubmit=this.handleSubmit.bind(this);
+        this.handleToggle=this.handleToggle.bind(this);
     }
 
     handleChange(event){
@@ -35,12 +38,22 @@ class EditContainer extends React.Component{
         this.props.editRecipe(this.props.recipe._id, this.state.inputs)
         }
 
+    handleToggle(){
+     this.setState((prevState)=>{
+         return {
+             ...prevState,
+             toggleShow: !prevState.toggleShow
+         };
+     })
+}
 
     render(){
 
         return(
             <EditComponent handleChange={this.handleChange}
                             handleSubmit={this.handleSubmit}
+                            handleToggle={this.handleToggle}
+                            toggleShow={this.state.toggleShow}
                             inputs={this.state.inputs}
                                 />
         )
