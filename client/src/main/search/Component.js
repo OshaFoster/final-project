@@ -5,7 +5,7 @@ import {connect} from "react-redux"
 function SearchComponent(props){
     return(
         <div className="searchDiv">
-        <input className="searchInput" onChange={(e) => {props.searchRecipe(e.target.value || ""); console.log(e.target.value)}} type="text" placeholder="Search for Recipes: "></input>
+        <input className="searchInput" onChange={(e) => {props.searchRecipe(e.target.value.toLowerCase() || ""); console.log(e.target.value)}} type="text" placeholder="Search for Recipes: "></input>
         </div>
     )
 }

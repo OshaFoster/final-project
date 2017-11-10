@@ -31,7 +31,7 @@
     flex-direction: column;
     height:370px;
     border-bottom: 1px solid grey;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
     background-color: rgba(240, 240, 240, 0.2);
 
 }
@@ -48,7 +48,7 @@ body {
 .addDiv{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 300px;
     margin:auto;
     padding: 10px;
 }
@@ -59,16 +59,18 @@ input::placeholder{
 .parent {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .child{
-    width: 33%;
+    width: 350px;
     padding: 25px;
+
 }
 
 .addInput{
     background-color: #FEFEFE;
-    font-size: 18px;
-    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
     margin:2px;
     color: #492260;
 }
@@ -130,6 +132,9 @@ span {
     margin-top: 15px;
     font-family: 'Handlee', cursive;
 }
+.addButton:hover {
+    background: #E3EDED;
+}
 .submitEdit{
     width: 20%;
     margin: auto;
@@ -161,7 +166,9 @@ span {
     font-size: 10px;
     margin-right: 10px;
     font-family: 'Handlee', cursive;
-
+}
+.deleteButton:hover {
+    background-color: #FEE35D
 }
 
 .searchInput {
@@ -170,8 +177,10 @@ span {
     display: flex;
     margin: auto;
     text-align: center;
-    font-family: 'Handlee', cursive;
-
+    font-family: 'Quicksand', sans-serif;
+}
+.searchInput:hover{
+    background-color: #EEF4F4;
 }
 
 .editDiv {
@@ -189,6 +198,9 @@ span {
     color:#208793;
     font-size: 16px;
     font-family: 'Handlee', cursive;
+}
+.editButton:hover{
+    background: #E3EDED;
 }
 .footer {
     margin-top: 80px;

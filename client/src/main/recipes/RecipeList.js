@@ -21,7 +21,7 @@ class RecipeList extends React.Component{
     genList(){
         function searchRecipes(query, recipes){
             function checkWord(word){
-
+                
             return word.includes(query);
             }
             function checkRecipe(recipe){
