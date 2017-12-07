@@ -1,7 +1,7 @@
 
 import axios from "axios";
 
-const recipesUrl="http://localhost:8008/recipes/";
+const recipesUrl="/recipes/";
 
 export function loadRecipes(){
     return (dispatch)=>{
